@@ -198,7 +198,7 @@ li{
     top: -100px;
 }
 .box:hover ol li:nth-child(2){
-    -webkit-transform:rotateX(180deg) translateZ(300px);
+    -webkit-transform:rotateX(90deg) translateZ(300px);
     width: 400px;
     height: 400px;
     opacity: 0.8;
