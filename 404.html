@@ -5,7 +5,100 @@
     <meta charset="UTF-8">
     <title>3D carousel</title>
 
-    <link rel="stylesheet" href="css/style.css">
+  
+    <style>* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    overflow: hidden;
+    display: flex;
+    background: #111;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+}
+
+#drag-container,
+#spin-container {
+    position: relative;
+    display: flex;
+    margin: auto;
+    transform-style: preserve-3d;
+    transform: rotateX(-10deg);
+}
+
+#drag-container img,
+#drag-container video {
+    transform-style: preserve-3d;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 200px;
+    font-size: 50px;
+    text-align: center;
+    box-shadow: 0 0 8px #fff;
+    -webkit-box-reflect: below 10px linear-gradient(transparent, transparent, #0005);
+}
+
+#drag-container img:hover,
+#drag-container video:hover {
+    box-shadow: 0 0 15px #fffd;
+    -webkit-box-reflect: below 10px linear-gradient(transparent, transparent, #0007);
+}
+
+#drag-container p {
+    font-family: Serif;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotateX(90deg);
+    color: #fff;
+}
+
+#ground {
+    width: 900px;
+    height: 900px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotateX(90deg);
+    background: -webkit-radial-gradient(center center, farthest-side, #9993, transparent);
+}
+
+#carousel-container {
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes spin {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
+@keyframes spinRevert {
+    from {
+        transform: rotateY(360deg);
+    }
+    to {
+        transform: rotateY(0deg);
+    }
+}
+————————————————
+版权声明：本文为CSDN博主「@蜡笔小新星」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+原文链接：https://blog.csdn.net/p305114466/article/details/127013722
+    </style>
 
 </head>
 
