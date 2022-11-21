@@ -85,7 +85,7 @@ li{
 }
 .minbox li:nth-child(2){
     /*background: url(../img/02.png) no-repeat 0 0;*/
-    -webkit-transform:rotateX(90deg) translateZ(50px);
+    -webkit-transform:rotateX(180deg) translateZ(50px);
 }
 .minbox li:nth-child(3){
     /*background: url(../img/03.png) no-repeat 0 0;*/
@@ -109,7 +109,7 @@ li{
 }
 .maxbox li:nth-child(2){
     /*background: url(../img/2.png) no-repeat 0 0;*/
-    -webkit-transform:translateZ(50px);
+    -webkit-transform: rotateX(180deg)translateZ(50px);
 }
 .maxbox li:nth-child(3){
     /*background: url(../img/3.png) no-repeat 0 0;*/
@@ -175,7 +175,7 @@ li{
     height: 100%;
 }
 .maxbox li:nth-child(2){
-    -webkit-transform:rotateX(90deg) translateZ(100px);
+    -webkit-transform:rotateX(180deg) translateZ(100px);
 }
 .maxbox li:nth-child(3){
     -webkit-transform:rotateX(-90deg) translateZ(100px);
@@ -198,7 +198,7 @@ li{
     top: -100px;
 }
 .box:hover ol li:nth-child(2){
-    -webkit-transform:rotateX(90deg) translateZ(300px);
+    -webkit-transform:rotateX(180deg) translateZ(300px);
     width: 400px;
     height: 400px;
     opacity: 0.8;
